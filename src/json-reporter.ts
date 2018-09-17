@@ -13,10 +13,6 @@ export default class JsonReporter implements IReporter {
     this.report = { results: [] };
   }
 
-  public open() {
-    return;
-  }
-
   public write(result: any) {
     this.report.results.push(result);
   }

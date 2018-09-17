@@ -16,10 +16,6 @@ export default class CsvReporter implements IReporter {
     this.outputPath = outputPath;
   }
 
-  public open() {
-    return;
-  }
-
   public write(result: any) {
     if (this.fields.length === 0) {
       this.fields = Object.keys(result);
